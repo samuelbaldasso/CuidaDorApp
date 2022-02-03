@@ -1,0 +1,7 @@
+{
+  "name": "cuida-dor-2",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
