@@ -1,27 +1,70 @@
-#container {
-  text-align: center;
-
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
+.photo
+{
+  margin-top: 20px;
 }
 
-#container strong {
-  font-size: 20px;
-  line-height: 26px;
+.photo img{
+  border-radius: 50%;
+  width: 200px;
+  border: 10px solid #ffff;
+  height: 200px;
+}
+.container
+{
+  display: flex;
+  flex-direction: column;
+  margin-top: 100px;
+  align-items: center;
+  justify-content: center;
 }
 
-#container p {
+.p{
+  font-family: "Ubuntu", sans-serif;
   font-size: 16px;
-  line-height: 22px;
-
-  color: #8c8c8c;
-
-  margin: 0;
+  text-align: center;
+  font-weight: 400;
+  color: #fff;
+  margin-top: 40px;
 }
 
-#container a {
-  text-decoration: none;
+.title h1{
+  font-family: "Ubuntu", sans-serif;
+  font-size: 48px;
+  text-align: center;
+  font-weight: 700;
+  color: #fff;
+}
+
+ion-content{
+  --ion-background-color:#4854e0;
+}
+
+.button
+{
+  display: flex;
+  gap: 12px;
+  margin-top: 10px;
+
+}
+
+#but1{
+  font-family: "Ubuntu", sans-serif;
+  font-size: 16px;
+  text-align: center;
+  font-weight: 400;
+  color: #fff;
+  background-color: rgb(120, 68, 168);
+  padding: 16px;
+  border-radius: 10%;
+}
+
+#but2{
+  font-family: "Ubuntu", sans-serif;
+  font-size: 16px;
+  text-align: center;
+  font-weight: 400;
+  background-color: #fff;
+  color:  rgb(120, 68, 168);
+  padding: 16px;
+  border-radius: 10%;
 }
