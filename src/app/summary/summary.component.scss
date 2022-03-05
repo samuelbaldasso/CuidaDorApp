@@ -1,0 +1,39 @@
+
+.container
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.title{
+  font-family: "Ubuntu", sans-serif;
+  font-size: 48px;
+  text-align: center;
+  font-weight: 700;
+  color: rgb(120, 68, 168);
+  margin-bottom: 120px;
+
+}
+
+.button
+{
+  display: flex;
+  flex-direction: column;
+  margin: 0 24px;
+  gap: 12px;
+  margin-top: 10px;
+}
+
+#but1{
+  font-family: "Ubuntu", sans-serif;
+  font-size: 16px;
+  text-align: center;
+  font-weight: 400;
+  color: #fff;
+  background-color: rgb(120, 68, 168);
+  padding: 16px;
+  border-radius: 3%;
+}
