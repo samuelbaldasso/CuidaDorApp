@@ -2,6 +2,8 @@
 {
   display: flex;
   flex-direction: column;
+  height: 100%;
+  margin-top: 60px;
   margin: 0 12px;
   align-items: center;
   justify-content: center;
@@ -10,13 +12,14 @@
 
 .photo img
 {
-  margin-top: 20px;
   border-radius: 15%;
+  width: 200px;
+  height: 150px;
 }
 
 .p{
   font-family: "Ubuntu", sans-serif;
-  font-size: 16px;
+  font-size: 12px;
   text-align: center;
   font-weight: 400;
   color:  rgb(120, 68, 168);
@@ -29,7 +32,6 @@
   text-align: center;
   font-weight: 700;
   color:  rgb(120, 68, 168);
-  margin-top: 40px;
 }
 
 

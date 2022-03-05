@@ -4,13 +4,17 @@
   flex-direction: column;
   margin: 0 12px;
   align-items: center;
+  height: 100%;
+  margin-top: 30px;
+  // margin-top: 150px;
   justify-content: center;
   text-align: center;
 }
 
 .p{
+  box-sizing: border-box;
   font-family: "Ubuntu", sans-serif;
-  font-size: 16px;
+  font-size: 12px;
   text-align: center;
   font-weight: 400;
   color:  rgb(120, 68, 168);
@@ -34,10 +38,6 @@
   text-align: center;
   font-weight: 700;
   color: rgb(120, 68, 168);
-}
-
-ion-content{
-  --ion-background-color:#4854e0;
 }
 
 .button
