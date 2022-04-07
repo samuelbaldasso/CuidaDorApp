@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { PrematuroComponent } from '../prematuro/prematuro.component';
 import { Screen1Component } from '../screen1/screen1.component';
 import { Screen2Component } from '../screen2/screen2.component';
 import { SummaryComponent } from '../summary/summary.component';
@@ -11,7 +12,12 @@ const routes: Routes = [
     component: HomePage,
   },
   {
-    path: 'summary', component: SummaryComponent
+    path: 'summary', component: SummaryComponent,
+    children: [
+      {
+        path: 'prematuro', component: PrematuroComponent
+      }
+    ]
   },
   {
     path: 'screen1', component: Screen1Component
@@ -19,6 +25,7 @@ const routes: Routes = [
   {
     path: 'screen2', component: Screen2Component
   },
+
 ];
 
 @NgModule({
