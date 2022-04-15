@@ -1,5 +1,8 @@
 import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
+import { HelpComponent } from './help/help.component';
+import { Help2Component } from './help2/help2.component';
+import { Help3Component } from './help3/help3.component';
 import { IfprematuroComponent } from './ifprematuro/ifprematuro.component';
 import { Ifprematuro2Component } from './ifprematuro2/ifprematuro2.component';
 import { PainComponent } from './pain/pain.component';
@@ -70,6 +73,19 @@ const routes: Routes = [
   {
     path: 'pain5', component: Pain5Component,
     loadChildren: () => import('./pain/pain.module').then( m => m.PainModule)
+  },
+  {
+    path: 'help', component: HelpComponent,
+    loadChildren: () => import('./help/help.module').then( m => m.HelpModule)
+  },
+  {
+    path: 'help2', component: Help2Component,
+    loadChildren: () => import('./help/help.module').then( m => m.HelpModule)
+  },
+
+  {
+    path: 'help3', component: Help3Component,
+    loadChildren: () => import('./help/help.module').then( m => m.HelpModule)
   },
 ];
 
