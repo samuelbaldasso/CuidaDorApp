@@ -1,5 +1,4 @@
-.container
-{
+.container {
   display: flex;
   flex-direction: column;
   height: 100%;
@@ -10,33 +9,31 @@
   text-align: center;
 }
 
-.photo img
-{
-  border-radius: 50%;
-  width: 100px;
-  height: 100px;
-  margin-bottom: 20px;
+.photo img {
+  border-radius: 15%;
+  width: 200px;
+  height: 150px;
+  margin: 0 8px;
 }
 
-.photo{
-  display: flex;
-  gap: 4px;
-}
-
-.text, .p{
-  margin-top: 4px;
-}
-
-p{
+.p {
   font-family: "Ubuntu", sans-serif;
   font-size: 12px;
-  text-align: center;
+  text-align: left;
+  padding-right: 32px;
   font-weight: 400;
-  color:  rgb(120, 68, 168);
-
+  color: rgb(120, 68, 168);
 }
 
-h1{
+.p-sub {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 16px;
+  text-align: center;
+  font-weight: 700;
+  color: rgb(120, 68, 168);
+}
+
+.subtitle h1 {
   font-family: "Ubuntu", sans-serif;
   font-size: 32px;
   text-align: center;
@@ -44,7 +41,7 @@ h1{
   color: rgb(120, 68, 168);
 }
 
-h3{
+.subtitle h3 {
   font-family: "Ubuntu", sans-serif;
   font-size: 16px;
   text-align: center;
@@ -52,12 +49,13 @@ h3{
   color: rgb(120, 68, 168);
 }
 
-.button
-{
+.button {
   display: flex;
+  gap: 12px;
+  margin-top: 10px;
 }
 
-#but1{
+#but1 {
   font-family: "Ubuntu", sans-serif;
   font-size: 16px;
   text-align: center;
@@ -65,16 +63,17 @@ h3{
   color: #fff;
   background-color: rgb(120, 68, 168);
   padding: 16px;
+  margin-top: 16px;
   border-radius: 10%;
 }
 
-#but2{
+#but2 {
   font-family: "Ubuntu", sans-serif;
   font-size: 16px;
   text-align: center;
   font-weight: 400;
   background-color: #fff;
-  color:  rgb(120, 68, 168);
+  color: rgb(120, 68, 168);
   padding: 16px;
   border-radius: 10%;
 }
