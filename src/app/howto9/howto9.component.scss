@@ -1,0 +1,86 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  margin-top: 60px;
+  margin: 0 12px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.photo img {
+  border-radius: 15%;
+  width: 150px;
+  height: 150px;
+  margin: 0 8px;
+}
+
+.photo-solo img {
+  border-radius: 15%;
+  width: 280px;
+  height: 180px;
+  margin: 8px;
+}
+
+.p {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 12px;
+  text-align: center;
+  // padding-right: 32px;
+  font-weight: 400;
+  color: rgb(120, 68, 168);
+}
+
+h4 {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 16px;
+  text-align: center;
+  font-weight: 700;
+  color: rgb(120, 68, 168);
+}
+
+.subtitle h1 {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 32px;
+  text-align: center;
+  font-weight: 700;
+  color: rgb(120, 68, 168);
+}
+
+.subtitle h3 {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 16px;
+  text-align: center;
+  font-weight: 700;
+  color: rgb(120, 68, 168);
+}
+
+.button {
+  display: flex;
+  gap: 12px;
+  margin-top: 10px;
+}
+
+#but1 {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 16px;
+  text-align: center;
+  font-weight: 400;
+  color: #fff;
+  background-color: rgb(120, 68, 168);
+  padding: 16px;
+  margin-top: 16px;
+  border-radius: 10%;
+}
+
+#but2 {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 16px;
+  text-align: center;
+  font-weight: 400;
+  background-color: #fff;
+  color: rgb(120, 68, 168);
+  padding: 16px;
+  border-radius: 10%;
+}
