@@ -25,3 +25,9 @@
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap');
+@import "../node_modules/font-awesome/scss/font-awesome";
+
+body {
+  --ion-background-color:#4854e0;
+  color: white;
+}

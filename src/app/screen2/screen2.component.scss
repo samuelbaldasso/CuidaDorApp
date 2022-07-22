@@ -8,6 +8,15 @@
   align-items: center;
   justify-content: center;
   text-align: center;
+  overflow-y: scroll;
+}
+
+.icon img{
+  display: flex;
+  align-items: flex-start;
+  padding: 12px;
+  background: white;
+  border: 3px solid var(--ion-background-color);
 }
 
 .photo img
@@ -22,7 +31,6 @@
   font-size: 12px;
   text-align: center;
   font-weight: 400;
-  color:  rgb(120, 68, 168);
 
 }
 
@@ -31,16 +39,14 @@
   font-size: 16px;
   text-align: center;
   font-weight: 700;
-  color:  rgb(120, 68, 168);
 }
 
 
 .title h1{
   font-family: "Ubuntu", sans-serif;
-  font-size: 32px;
+  font-size: 24px;
   text-align: center;
   font-weight: 700;
-  color: rgb(120, 68, 168);
 }
 
 .button
@@ -68,7 +74,6 @@
   text-align: center;
   font-weight: 400;
   background-color: #fff;
-  color:  rgb(120, 68, 168);
   padding: 16px;
   border-radius: 10%;
 }

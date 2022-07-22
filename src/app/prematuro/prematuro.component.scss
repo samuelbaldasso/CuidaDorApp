@@ -10,6 +10,14 @@
   text-align: center;
 }
 
+.icon img{
+  display: flex;
+  align-items: flex-start;
+  padding: 12px;
+  background: white;
+  border: 3px solid var(--ion-background-color);
+}
+
 .photo img
 {
   border-radius: 15%;
@@ -22,7 +30,6 @@
   font-size: 12px;
   text-align: center;
   font-weight: 400;
-  color:  rgb(120, 68, 168);
 
 }
 
@@ -31,7 +38,6 @@
   font-size: 16px;
   text-align: center;
   font-weight: 700;
-  color:  rgb(120, 68, 168);
 }
 
 
@@ -40,7 +46,6 @@
   font-size: 32px;
   text-align: center;
   font-weight: 700;
-  color: rgb(120, 68, 168);
 }
 
 .subtitle h3{
@@ -48,7 +53,6 @@
   font-size: 16px;
   text-align: center;
   font-weight: 700;
-  color: rgb(120, 68, 168);
 }
 
 .button
