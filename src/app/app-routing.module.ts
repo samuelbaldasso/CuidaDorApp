@@ -1,3 +1,4 @@
+import { QuizComponent } from './quiz/quiz.component';
 import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 import { AboutComponent } from './about/about.component';
@@ -25,6 +26,7 @@ import { Prematuro2Component } from './prematuro2/prematuro2.component';
 import { Screen1Component } from './screen1/screen1.component';
 import { Screen2Component } from './screen2/screen2.component';
 import { SummaryComponent } from './summary/summary.component';
+import { Quiz2Component } from './quiz2/quiz2.component';
 
 const routes: Routes = [
   {
@@ -137,6 +139,14 @@ const routes: Routes = [
     path: 'how9', component: Howto9Component,
     loadChildren: () => import('./howto/howto.module').then( m => m.HowtoModule)
   },
+  {
+    path: 'quiz', component: QuizComponent,
+    loadChildren: () => import('./quiz/quiz.module').then( m => m.QuizModule)
+  },
+  {
+    path: 'quiz2', component: Quiz2Component,
+    loadChildren: () => import('./quiz/quiz.module').then( m => m.QuizModule)
+  }
 ];
 
 @NgModule({
