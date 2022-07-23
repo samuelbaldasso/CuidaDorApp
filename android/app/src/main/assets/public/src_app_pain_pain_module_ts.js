@@ -1,7 +1,7 @@
 "use strict";
 (self["webpackChunkapp"] = self["webpackChunkapp"] || []).push([["src_app_pain_pain_module_ts"],{
 
-/***/ 5457:
+/***/ 2506:
 /*!*********************************************!*\
   !*** ./src/app/pain/pain-routing.module.ts ***!
   \*********************************************/
@@ -11,14 +11,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "PainRoutingModule": () => (/* binding */ PainRoutingModule)
 /* harmony export */ });
-/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! tslib */ 8806);
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @angular/core */ 4001);
-/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @angular/router */ 3252);
-/* harmony import */ var _pain2_pain2_component__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../pain2/pain2.component */ 9193);
-/* harmony import */ var _pain3_pain3_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../pain3/pain3.component */ 361);
-/* harmony import */ var _pain4_pain4_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../pain4/pain4.component */ 978);
-/* harmony import */ var _pain5_pain5_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../pain5/pain5.component */ 2327);
-/* harmony import */ var _pain_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./pain.component */ 9873);
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! tslib */ 8163);
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @angular/core */ 1109);
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @angular/router */ 5485);
+/* harmony import */ var _pain2_pain2_component__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../pain2/pain2.component */ 7523);
+/* harmony import */ var _pain3_pain3_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../pain3/pain3.component */ 8125);
+/* harmony import */ var _pain4_pain4_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../pain4/pain4.component */ 7969);
+/* harmony import */ var _pain5_pain5_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../pain5/pain5.component */ 7621);
+/* harmony import */ var _pain_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./pain.component */ 7096);
 
 
 
@@ -50,7 +50,7 @@ PainRoutingModule = (0,tslib__WEBPACK_IMPORTED_MODULE_5__.__decorate)([
 
 /***/ }),
 
-/***/ 2434:
+/***/ 7071:
 /*!*************************************!*\
   !*** ./src/app/pain/pain.module.ts ***!
   \*************************************/
@@ -60,17 +60,17 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "PainModule": () => (/* binding */ PainModule)
 /* harmony export */ });
-/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! tslib */ 8806);
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @angular/core */ 4001);
-/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @angular/common */ 8267);
-/* harmony import */ var _ionic_angular__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @ionic/angular */ 8099);
-/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @angular/forms */ 8346);
-/* harmony import */ var _pain_routing_module__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./pain-routing.module */ 5457);
-/* harmony import */ var _pain_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./pain.component */ 9873);
-/* harmony import */ var _pain2_pain2_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../pain2/pain2.component */ 9193);
-/* harmony import */ var _pain3_pain3_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../pain3/pain3.component */ 361);
-/* harmony import */ var _pain4_pain4_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../pain4/pain4.component */ 978);
-/* harmony import */ var _pain5_pain5_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../pain5/pain5.component */ 2327);
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! tslib */ 8163);
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @angular/core */ 1109);
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @angular/common */ 1789);
+/* harmony import */ var _ionic_angular__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @ionic/angular */ 5472);
+/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @angular/forms */ 1777);
+/* harmony import */ var _pain_routing_module__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./pain-routing.module */ 2506);
+/* harmony import */ var _pain_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./pain.component */ 7096);
+/* harmony import */ var _pain2_pain2_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../pain2/pain2.component */ 7523);
+/* harmony import */ var _pain3_pain3_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../pain3/pain3.component */ 8125);
+/* harmony import */ var _pain4_pain4_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../pain4/pain4.component */ 7969);
+/* harmony import */ var _pain5_pain5_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../pain5/pain5.component */ 7621);
 
 
 

@@ -1,7 +1,7 @@
 "use strict";
 (self["webpackChunkapp"] = self["webpackChunkapp"] || []).push([["src_app_howto_howto_module_ts"],{
 
-/***/ 8857:
+/***/ 9014:
 /*!***********************************************!*\
   !*** ./src/app/howto/howto-routing.module.ts ***!
   \***********************************************/
@@ -11,18 +11,18 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "HowtoRoutingModule": () => (/* binding */ HowtoRoutingModule)
 /* harmony export */ });
-/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! tslib */ 8806);
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @angular/core */ 4001);
-/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! @angular/router */ 3252);
-/* harmony import */ var _howto2_howto2_component__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../howto2/howto2.component */ 2597);
-/* harmony import */ var _howto3_howto3_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../howto3/howto3.component */ 2288);
-/* harmony import */ var _howto4_howto4_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../howto4/howto4.component */ 2509);
-/* harmony import */ var _howto5_howto5_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../howto5/howto5.component */ 3754);
-/* harmony import */ var _howto6_howto6_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../howto6/howto6.component */ 5330);
-/* harmony import */ var _howto7_howto7_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../howto7/howto7.component */ 4945);
-/* harmony import */ var _howto8_howto8_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../howto8/howto8.component */ 5858);
-/* harmony import */ var _howto9_howto9_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../howto9/howto9.component */ 9837);
-/* harmony import */ var _howto_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./howto.component */ 8685);
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! tslib */ 8163);
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @angular/core */ 1109);
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! @angular/router */ 5485);
+/* harmony import */ var _howto2_howto2_component__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../howto2/howto2.component */ 1453);
+/* harmony import */ var _howto3_howto3_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../howto3/howto3.component */ 5522);
+/* harmony import */ var _howto4_howto4_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../howto4/howto4.component */ 8228);
+/* harmony import */ var _howto5_howto5_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../howto5/howto5.component */ 1411);
+/* harmony import */ var _howto6_howto6_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../howto6/howto6.component */ 1407);
+/* harmony import */ var _howto7_howto7_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../howto7/howto7.component */ 9052);
+/* harmony import */ var _howto8_howto8_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../howto8/howto8.component */ 2151);
+/* harmony import */ var _howto9_howto9_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../howto9/howto9.component */ 1149);
+/* harmony import */ var _howto_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./howto.component */ 3042);
 
 
 
@@ -62,7 +62,7 @@ HowtoRoutingModule = (0,tslib__WEBPACK_IMPORTED_MODULE_9__.__decorate)([
 
 /***/ }),
 
-/***/ 5367:
+/***/ 4540:
 /*!***************************************!*\
   !*** ./src/app/howto/howto.module.ts ***!
   \***************************************/
@@ -72,21 +72,21 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "HowtoModule": () => (/* binding */ HowtoModule)
 /* harmony export */ });
-/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! tslib */ 8806);
-/* harmony import */ var _howto5_howto5_component__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./../howto5/howto5.component */ 3754);
-/* harmony import */ var _howto_routing_module__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./howto-routing.module */ 8857);
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! @angular/core */ 4001);
-/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! @angular/common */ 8267);
-/* harmony import */ var _ionic_angular__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! @ionic/angular */ 8099);
-/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! @angular/forms */ 8346);
-/* harmony import */ var _howto_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./howto.component */ 8685);
-/* harmony import */ var _howto2_howto2_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../howto2/howto2.component */ 2597);
-/* harmony import */ var _howto3_howto3_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../howto3/howto3.component */ 2288);
-/* harmony import */ var _howto4_howto4_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../howto4/howto4.component */ 2509);
-/* harmony import */ var _howto6_howto6_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../howto6/howto6.component */ 5330);
-/* harmony import */ var _howto7_howto7_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../howto7/howto7.component */ 4945);
-/* harmony import */ var _howto8_howto8_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../howto8/howto8.component */ 5858);
-/* harmony import */ var _howto9_howto9_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../howto9/howto9.component */ 9837);
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! tslib */ 8163);
+/* harmony import */ var _howto5_howto5_component__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./../howto5/howto5.component */ 1411);
+/* harmony import */ var _howto_routing_module__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./howto-routing.module */ 9014);
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! @angular/core */ 1109);
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! @angular/common */ 1789);
+/* harmony import */ var _ionic_angular__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! @ionic/angular */ 5472);
+/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! @angular/forms */ 1777);
+/* harmony import */ var _howto_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./howto.component */ 3042);
+/* harmony import */ var _howto2_howto2_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../howto2/howto2.component */ 1453);
+/* harmony import */ var _howto3_howto3_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../howto3/howto3.component */ 5522);
+/* harmony import */ var _howto4_howto4_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../howto4/howto4.component */ 8228);
+/* harmony import */ var _howto6_howto6_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../howto6/howto6.component */ 1407);
+/* harmony import */ var _howto7_howto7_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../howto7/howto7.component */ 9052);
+/* harmony import */ var _howto8_howto8_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../howto8/howto8.component */ 2151);
+/* harmony import */ var _howto9_howto9_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../howto9/howto9.component */ 1149);
 
 
 
