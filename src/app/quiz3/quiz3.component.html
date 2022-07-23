@@ -1,5 +1,5 @@
 <div class="icon">
-  <img routerLink="/quiz" src="../../assets/icon/arrow.png" />
+  <img routerLink="/quiz2" src="../../assets/icon/arrow.png" />
 </div>
 
 <div class="container">
@@ -7,20 +7,20 @@
     <h2>OBSERVE ATENTAMENTE O BEBÊ.</h2>
 
     <div class="photo">
-      <img src="../../assets/imgs/30.png" alt="" />
+      <img src="../../assets/imgs/23.png" alt="" />
     </div>
 
     <div class="p">
       <p>Agora responda: O bebê está com dor?</p>
 
       <div class="paragraphs">
-        <p class="right" (click)="selectedButton1()">
+        <p class="wrong" (click)="selectedButton2()">
           Sim, é possível observar através da mímica facial e os movimentos do
           bebê.
         </p>
       </div>
       <div class="paragraphs">
-        <p class="wrong" (click)="selectedButton2()">Não, o bebê não apresenta sinais sugestivos de dor.</p>
+        <p class="right" (click)="selectedButton1()">Não, o bebê não apresenta sinais sugestivos de dor.</p>
       </div>
     </div>
 

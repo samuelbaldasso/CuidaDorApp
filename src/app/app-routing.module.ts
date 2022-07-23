@@ -27,6 +27,11 @@ import { Screen1Component } from './screen1/screen1.component';
 import { Screen2Component } from './screen2/screen2.component';
 import { SummaryComponent } from './summary/summary.component';
 import { Quiz2Component } from './quiz2/quiz2.component';
+import { Quiz3Component } from './quiz3/quiz3.component';
+import { Quiz4Component } from './quiz4/quiz4.component';
+import { Quiz5Component } from './quiz5/quiz5.component';
+import { Quiz6Component } from './quiz6/quiz6.component';
+import { Quiz7Component } from './quiz7/quiz7.component';
 
 const routes: Routes = [
   {
@@ -146,7 +151,27 @@ const routes: Routes = [
   {
     path: 'quiz2', component: Quiz2Component,
     loadChildren: () => import('./quiz/quiz.module').then( m => m.QuizModule)
-  }
+  },
+  {
+    path: 'quiz3', component: Quiz3Component,
+    loadChildren: () => import('./quiz/quiz.module').then( m => m.QuizModule)
+  },
+  {
+    path: 'quiz4', component: Quiz4Component,
+    loadChildren: () => import('./quiz/quiz.module').then( m => m.QuizModule)
+  },
+  {
+    path: 'quiz5', component: Quiz5Component,
+    loadChildren: () => import('./quiz/quiz.module').then( m => m.QuizModule)
+  },
+  {
+    path: 'quiz6', component: Quiz6Component,
+    loadChildren: () => import('./quiz/quiz.module').then( m => m.QuizModule)
+  },
+  {
+    path: 'quiz7', component: Quiz7Component,
+    loadChildren: () => import('./quiz/quiz.module').then( m => m.QuizModule)
+  },
 ];
 
 @NgModule({

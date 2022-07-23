@@ -1,0 +1,37 @@
+<div class="icon">
+  <img routerLink="/quiz3" src="../../assets/icon/arrow.png" />
+</div>
+
+<div class="container">
+  <div class="subtitle">
+    <h2>OBSERVE O BEBÊ PREMATURO QUE NÃO PODE SAIR DA INCUBADORA.</h2>
+
+    <div class="photo">
+      <img src="../../assets/imgs/24.png" alt="" />
+    </div>
+
+    <div class="p">
+      <p>
+        Agora responda: Qual das condutas a seguir você usaria para acalmá-lo
+        durante procedimentos dolorosos?
+      </p>
+
+      <div class="paragraphs">
+        <p class="right" (click)="selectedButton1()">
+          Sucção Não-Nutritiva + Glicose Oral a 25% ou gotas de leite da própria
+          mãe
+        </p>
+      </div>
+      <div class="paragraphs">
+        <p class="wrong" (click)="selectedButton2()">
+          Aleitamento materno ou contato pele-a-pele
+        </p>
+      </div>
+    </div>
+
+    <div class="button">
+      <h3 class="btn2 hide" *ngIf="!isTrue">TENTE NOVAMENTE...</h3>
+      <h3 class="btn1" *ngIf="isTrue">ACERTOU!!!</h3>
+    </div>
+  </div>
+</div>

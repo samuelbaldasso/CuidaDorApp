@@ -1,11 +1,12 @@
-.container {
+.container
+{
   display: flex;
   flex-direction: column;
   height: 100%;
-  margin: auto 12px;
   align-items: center;
-  overflow-y: scroll;
+  margin: auto 12px;
   justify-content: center;
+  overflow-y: scroll;
   text-align: center;
 }
 
@@ -19,56 +20,63 @@
   border: 3px solid var(--ion-background-color);
 }
 
-.photo img {
-  border-radius: 15%;
-  width: 150px;
+.photo img
+{
+  width: 200px;
   height: 150px;
-  margin: 0 8px;
+  margin-bottom: 2px;
 }
 
-.photo-solo img {
-  border-radius: 15%;
-  width: 280px;
-  height: 180px;
-  margin: 8px;
+.paragraphs {
+  display: flex;
+  flex-direction: column;
+  background-color: grey;
+  border-radius: 12px;
+  padding: 0 12px;
+  margin: 12px;
 }
 
-.p {
+// .photo{
+//   display: flex;
+//   gap: 4px;
+// }
+
+p{
   font-family: "Ubuntu", sans-serif;
   font-size: 12px;
   text-align: center;
-  // padding-right: 32px;
   font-weight: 400;
+
 }
 
-h4 {
+h2{
+  font-family: "Ubuntu", sans-serif;
+  font-size: 24px;
+  text-align: center;
+  font-weight: 700;
+}
+
+.btn2{
   font-family: "Ubuntu", sans-serif;
   font-size: 16px;
   text-align: center;
   font-weight: 700;
+  color: red;
 }
 
-.subtitle h1 {
-  font-family: "Ubuntu", sans-serif;
-  font-size: 32px;
-  text-align: center;
-  font-weight: 700;
-}
-
-.subtitle h3 {
+.btn1{
   font-family: "Ubuntu", sans-serif;
   font-size: 16px;
   text-align: center;
   font-weight: 700;
+  color: lightgreen;
 }
 
-.button {
-  display: flex;
-  gap: 12px;
-  margin-top: 10px;
+.hide{
+  display: none;
 }
 
-#but1 {
+#but1{
   font-family: "Ubuntu", sans-serif;
   font-size: 16px;
   text-align: center;
@@ -76,11 +84,10 @@ h4 {
   color: #fff;
   background-color: rgb(120, 68, 168);
   padding: 16px;
-  margin-top: 16px;
   border-radius: 10%;
 }
 
-#but2 {
+#but2{
   font-family: "Ubuntu", sans-serif;
   font-size: 16px;
   text-align: center;
