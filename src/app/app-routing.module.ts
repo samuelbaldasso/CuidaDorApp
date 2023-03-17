@@ -32,145 +32,150 @@ import { Quiz4Component } from './quiz4/quiz4.component';
 import { Quiz5Component } from './quiz5/quiz5.component';
 import { Quiz6Component } from './quiz6/quiz6.component';
 import { Quiz7Component } from './quiz7/quiz7.component';
+import { SplashComponent } from './splash/splash.component';
 
 const routes: Routes = [
   {
     path: 'home',
-    loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)
+    loadChildren: () => import('./home/home.module').then(m => m.HomePageModule)
   },
   {
     path: '',
-    redirectTo: 'home',
+    redirectTo: 'splash',
     pathMatch: 'full'
   },
   {
     path: 'summary', component: SummaryComponent,
-    loadChildren: () => import('./summary/summary.module').then( m => m.SummaryModule)
+    loadChildren: () => import('./summary/summary.module').then(m => m.SummaryModule)
   },
   {
     path: 'screen1', component: Screen1Component,
-    loadChildren: () => import('./screen1/screen1.module').then( m => m.Screen1Module)
+    loadChildren: () => import('./screen1/screen1.module').then(m => m.Screen1Module)
   },
   {
     path: 'screen2', component: Screen2Component,
-    loadChildren: () => import('./screen2/screen2.module').then( m => m.Screen2Module)
+    loadChildren: () => import('./screen2/screen2.module').then(m => m.Screen2Module)
   },
   {
     path: 'prematuro', component: PrematuroComponent,
-    loadChildren: () => import('./prematuro/prematuro.module').then( m => m.PrematuroModule)
+    loadChildren: () => import('./prematuro/prematuro.module').then(m => m.PrematuroModule)
   },
   {
     path: 'prematuro2', component: Prematuro2Component,
-    loadChildren: () => import('./prematuro2/prematuro2.module').then( m => m.Prematuro2Module)
+    loadChildren: () => import('./prematuro2/prematuro2.module').then(m => m.Prematuro2Module)
   },
   {
     path: 'ifprematuro', component: IfprematuroComponent,
-    loadChildren: () => import('./ifprematuro/ifprematuro.module').then( m => m.IfPrematuroModule)
+    loadChildren: () => import('./ifprematuro/ifprematuro.module').then(m => m.IfPrematuroModule)
   },
   {
     path: 'ifprematuro2', component: Ifprematuro2Component,
-    loadChildren: () => import('./ifprematuro2/ifprematuro2.module').then( m => m.IfPrematuro2Module)
+    loadChildren: () => import('./ifprematuro2/ifprematuro2.module').then(m => m.IfPrematuro2Module)
   },
   {
     path: 'about', component: AboutComponent,
-    loadChildren: () => import('./about/about.module').then( m => m.AboutModule)
+    loadChildren: () => import('./about/about.module').then(m => m.AboutModule)
   },
   {
     path: 'pain', component: PainComponent,
-    loadChildren: () => import('./pain/pain.module').then( m => m.PainModule)
+    loadChildren: () => import('./pain/pain.module').then(m => m.PainModule)
   },
   {
     path: 'pain2', component: Pain2Component,
-    loadChildren: () => import('./pain/pain.module').then( m => m.PainModule)
+    loadChildren: () => import('./pain/pain.module').then(m => m.PainModule)
   },
   {
     path: 'pain3', component: Pain3Component,
-    loadChildren: () => import('./pain/pain.module').then( m => m.PainModule)
+    loadChildren: () => import('./pain/pain.module').then(m => m.PainModule)
   },
   {
     path: 'pain4', component: Pain4Component,
-    loadChildren: () => import('./pain/pain.module').then( m => m.PainModule)
+    loadChildren: () => import('./pain/pain.module').then(m => m.PainModule)
   },
   {
     path: 'pain5', component: Pain5Component,
-    loadChildren: () => import('./pain/pain.module').then( m => m.PainModule)
+    loadChildren: () => import('./pain/pain.module').then(m => m.PainModule)
   },
   {
     path: 'help', component: HelpComponent,
-    loadChildren: () => import('./help/help.module').then( m => m.HelpModule)
+    loadChildren: () => import('./help/help.module').then(m => m.HelpModule)
   },
   {
     path: 'help2', component: Help2Component,
-    loadChildren: () => import('./help/help.module').then( m => m.HelpModule)
+    loadChildren: () => import('./help/help.module').then(m => m.HelpModule)
   },
 
   {
     path: 'help3', component: Help3Component,
-    loadChildren: () => import('./help/help.module').then( m => m.HelpModule)
+    loadChildren: () => import('./help/help.module').then(m => m.HelpModule)
   },
   {
     path: 'how', component: HowtoComponent,
-    loadChildren: () => import('./howto/howto.module').then( m => m.HowtoModule)
+    loadChildren: () => import('./howto/howto.module').then(m => m.HowtoModule)
   },
   {
     path: 'how2', component: Howto2Component,
-    loadChildren: () => import('./howto/howto.module').then( m => m.HowtoModule)
+    loadChildren: () => import('./howto/howto.module').then(m => m.HowtoModule)
   },
   {
     path: 'how3', component: Howto3Component,
-    loadChildren: () => import('./howto/howto.module').then( m => m.HowtoModule)
+    loadChildren: () => import('./howto/howto.module').then(m => m.HowtoModule)
   },
   {
     path: 'how4', component: Howto4Component,
-    loadChildren: () => import('./howto/howto.module').then( m => m.HowtoModule)
+    loadChildren: () => import('./howto/howto.module').then(m => m.HowtoModule)
   },
   {
     path: 'how5', component: Howto5Component,
-    loadChildren: () => import('./howto/howto.module').then( m => m.HowtoModule)
+    loadChildren: () => import('./howto/howto.module').then(m => m.HowtoModule)
   },
   {
     path: 'how6', component: Howto6Component,
-    loadChildren: () => import('./howto/howto.module').then( m => m.HowtoModule)
+    loadChildren: () => import('./howto/howto.module').then(m => m.HowtoModule)
   },
   {
     path: 'how7', component: Howto7Component,
-    loadChildren: () => import('./howto/howto.module').then( m => m.HowtoModule)
+    loadChildren: () => import('./howto/howto.module').then(m => m.HowtoModule)
   },
   {
     path: 'how8', component: Howto8Component,
-    loadChildren: () => import('./howto/howto.module').then( m => m.HowtoModule)
+    loadChildren: () => import('./howto/howto.module').then(m => m.HowtoModule)
   },
   {
     path: 'how9', component: Howto9Component,
-    loadChildren: () => import('./howto/howto.module').then( m => m.HowtoModule)
+    loadChildren: () => import('./howto/howto.module').then(m => m.HowtoModule)
   },
   {
     path: 'quiz', component: QuizComponent,
-    loadChildren: () => import('./quiz/quiz.module').then( m => m.QuizModule)
+    loadChildren: () => import('./quiz/quiz.module').then(m => m.QuizModule)
   },
   {
     path: 'quiz2', component: Quiz2Component,
-    loadChildren: () => import('./quiz/quiz.module').then( m => m.QuizModule)
+    loadChildren: () => import('./quiz/quiz.module').then(m => m.QuizModule)
   },
   {
     path: 'quiz3', component: Quiz3Component,
-    loadChildren: () => import('./quiz/quiz.module').then( m => m.QuizModule)
+    loadChildren: () => import('./quiz/quiz.module').then(m => m.QuizModule)
   },
   {
     path: 'quiz4', component: Quiz4Component,
-    loadChildren: () => import('./quiz/quiz.module').then( m => m.QuizModule)
+    loadChildren: () => import('./quiz/quiz.module').then(m => m.QuizModule)
   },
   {
     path: 'quiz5', component: Quiz5Component,
-    loadChildren: () => import('./quiz/quiz.module').then( m => m.QuizModule)
+    loadChildren: () => import('./quiz/quiz.module').then(m => m.QuizModule)
   },
   {
     path: 'quiz6', component: Quiz6Component,
-    loadChildren: () => import('./quiz/quiz.module').then( m => m.QuizModule)
+    loadChildren: () => import('./quiz/quiz.module').then(m => m.QuizModule)
   },
   {
     path: 'quiz7', component: Quiz7Component,
-    loadChildren: () => import('./quiz/quiz.module').then( m => m.QuizModule)
+    loadChildren: () => import('./quiz/quiz.module').then(m => m.QuizModule)
+  },
+  {
+    path: 'splash', component: SplashComponent,
+    loadChildren: () => import('./splash/splash.module').then(m => m.SplashModule)
   },
 ];
 

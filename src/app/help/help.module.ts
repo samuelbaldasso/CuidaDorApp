@@ -7,9 +7,6 @@ import { HelpComponent } from './help.component';
 import { Help2Component } from '../help2/help2.component';
 import { Help3Component } from '../help3/help3.component';
 
-
-
-
 @NgModule({
   imports: [
     CommonModule,
@@ -19,4 +16,4 @@ import { Help3Component } from '../help3/help3.component';
   ],
   declarations: [HelpComponent, Help2Component, Help3Component]
 })
-export class HelpModule{}
+export class HelpModule { }
