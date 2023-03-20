@@ -13,22 +13,22 @@ import { HowtoComponent } from './howto.component';
 
 
 const routes: Routes = [
-      {
-        path: 'how', component: HowtoComponent, children: [
-          {path: 'how2', component: Howto2Component},
-          {path: 'how3', component: Howto3Component},
-          {path: 'how4', component: Howto4Component},
-          {path: 'how5', component: Howto5Component},
-          {path: 'how6', component: Howto6Component},
-          {path: 'how7', component: Howto7Component},
-          {path: 'how8', component: Howto8Component},
-          {path: 'how9', component: Howto9Component},
-        ]
-      }
+  {
+    path: 'how', component: HowtoComponent, children: [
+      { path: 'how2', component: Howto2Component },
+      { path: 'how3', component: Howto3Component },
+      { path: 'how4', component: Howto4Component },
+      { path: 'how5', component: Howto5Component },
+      { path: 'how6', component: Howto6Component },
+      { path: 'how7', component: Howto7Component },
+      { path: 'how8', component: Howto8Component },
+      { path: 'how9', component: Howto9Component },
+    ]
+  }
 ];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule]
 })
-export class HowtoRoutingModule {}
+export class HowtoRoutingModule { }

@@ -1,4 +1,4 @@
-import { Howto5Component } from './../howto5/howto5.component';
+import { Howto5Component } from '../howto5/howto5.component';
 import { HowtoRoutingModule } from './howto-routing.module';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
@@ -27,4 +27,4 @@ import { Howto9Component } from '../howto9/howto9.component';
     Howto9Component
   ],
 })
-export class HowtoModule {}
+export class HowtoModule { }
