@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/sbaldass/Desktop/app-cuida-dor/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-sq/values-sq.xml",
+            "outputFile": "/Users/sbaldass/Downloads/app-cuida-dor/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-sq/values-sq.xml",
             "map": [
                 {
                     "source": "/Users/sbaldass/.gradle/caches/transforms-3/ce3f79a523d89320dd464c2b2de6183e/transformed/appcompat-1.2.0/res/values-sq/values-sq.xml",

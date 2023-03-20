@@ -73,7 +73,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "HowtoModule": () => (/* binding */ HowtoModule)
 /* harmony export */ });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! tslib */ 8163);
-/* harmony import */ var _howto5_howto5_component__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./../howto5/howto5.component */ 1411);
+/* harmony import */ var _howto5_howto5_component__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../howto5/howto5.component */ 1411);
 /* harmony import */ var _howto_routing_module__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./howto-routing.module */ 9014);
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! @angular/core */ 1109);
 /* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! @angular/common */ 1789);

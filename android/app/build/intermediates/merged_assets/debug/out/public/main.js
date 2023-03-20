@@ -47,10 +47,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "AppRoutingModule": () => (/* binding */ AppRoutingModule)
 /* harmony export */ });
-/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_32__ = __webpack_require__(/*! tslib */ 8163);
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_33__ = __webpack_require__(/*! tslib */ 8163);
 /* harmony import */ var _quiz_quiz_component__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./quiz/quiz.component */ 425);
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_33__ = __webpack_require__(/*! @angular/core */ 1109);
-/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_34__ = __webpack_require__(/*! @angular/router */ 5485);
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_34__ = __webpack_require__(/*! @angular/core */ 1109);
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_35__ = __webpack_require__(/*! @angular/router */ 5485);
 /* harmony import */ var _about_about_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./about/about.component */ 6698);
 /* harmony import */ var _help_help_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./help/help.component */ 9002);
 /* harmony import */ var _help2_help2_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./help2/help2.component */ 4765);
@@ -82,6 +82,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _quiz5_quiz5_component__WEBPACK_IMPORTED_MODULE_29__ = __webpack_require__(/*! ./quiz5/quiz5.component */ 1993);
 /* harmony import */ var _quiz6_quiz6_component__WEBPACK_IMPORTED_MODULE_30__ = __webpack_require__(/*! ./quiz6/quiz6.component */ 523);
 /* harmony import */ var _quiz7_quiz7_component__WEBPACK_IMPORTED_MODULE_31__ = __webpack_require__(/*! ./quiz7/quiz7.component */ 1798);
+/* harmony import */ var _splash_splash_component__WEBPACK_IMPORTED_MODULE_32__ = __webpack_require__(/*! ./splash/splash.component */ 5217);
+
 
 
 
@@ -124,7 +126,7 @@ const routes = [
     },
     {
         path: '',
-        redirectTo: 'home',
+        redirectTo: 'splash',
         pathMatch: 'full'
     },
     {
@@ -255,15 +257,19 @@ const routes = [
         path: 'quiz7', component: _quiz7_quiz7_component__WEBPACK_IMPORTED_MODULE_31__.Quiz7Component,
         loadChildren: () => __webpack_require__.e(/*! import() */ "src_app_quiz_quiz_module_ts").then(__webpack_require__.bind(__webpack_require__, /*! ./quiz/quiz.module */ 7002)).then(m => m.QuizModule)
     },
+    {
+        path: 'splash', component: _splash_splash_component__WEBPACK_IMPORTED_MODULE_32__.SplashComponent,
+        loadChildren: () => __webpack_require__.e(/*! import() */ "src_app_splash_splash_module_ts").then(__webpack_require__.bind(__webpack_require__, /*! ./splash/splash.module */ 9623)).then(m => m.SplashModule)
+    },
 ];
 let AppRoutingModule = class AppRoutingModule {
 };
-AppRoutingModule = (0,tslib__WEBPACK_IMPORTED_MODULE_32__.__decorate)([
-    (0,_angular_core__WEBPACK_IMPORTED_MODULE_33__.NgModule)({
+AppRoutingModule = (0,tslib__WEBPACK_IMPORTED_MODULE_33__.__decorate)([
+    (0,_angular_core__WEBPACK_IMPORTED_MODULE_34__.NgModule)({
         imports: [
-            _angular_router__WEBPACK_IMPORTED_MODULE_34__.RouterModule.forRoot(routes, { preloadingStrategy: _angular_router__WEBPACK_IMPORTED_MODULE_34__.PreloadAllModules })
+            _angular_router__WEBPACK_IMPORTED_MODULE_35__.RouterModule.forRoot(routes, { preloadingStrategy: _angular_router__WEBPACK_IMPORTED_MODULE_35__.PreloadAllModules })
         ],
-        exports: [_angular_router__WEBPACK_IMPORTED_MODULE_34__.RouterModule]
+        exports: [_angular_router__WEBPACK_IMPORTED_MODULE_35__.RouterModule]
     })
 ], AppRoutingModule);
 
@@ -1530,6 +1536,54 @@ Screen2Component = (0,tslib__WEBPACK_IMPORTED_MODULE_2__.__decorate)([
 
 /***/ }),
 
+/***/ 5217:
+/*!********************************************!*\
+  !*** ./src/app/splash/splash.component.ts ***!
+  \********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "SplashComponent": () => (/* binding */ SplashComponent)
+/* harmony export */ });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! tslib */ 8163);
+/* harmony import */ var _splash_component_html_ngResource__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./splash.component.html?ngResource */ 3396);
+/* harmony import */ var _splash_component_scss_ngResource__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./splash.component.scss?ngResource */ 768);
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @angular/core */ 1109);
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/router */ 5485);
+/* harmony import */ var _ionic_angular__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @ionic/angular */ 5472);
+
+
+
+
+
+
+let SplashComponent = class SplashComponent {
+    constructor(router, plat) {
+        this.router = router;
+        this.plat = plat;
+    }
+    ngOnInit() {
+        this.plat.ready().then(() => setTimeout(() => this.router.navigateByUrl('home'), 2000));
+    }
+};
+SplashComponent.ctorParameters = () => [
+    { type: _angular_router__WEBPACK_IMPORTED_MODULE_2__.Router },
+    { type: _ionic_angular__WEBPACK_IMPORTED_MODULE_3__.Platform }
+];
+SplashComponent = (0,tslib__WEBPACK_IMPORTED_MODULE_4__.__decorate)([
+    (0,_angular_core__WEBPACK_IMPORTED_MODULE_5__.Component)({
+        selector: 'app-splash',
+        template: _splash_component_html_ngResource__WEBPACK_IMPORTED_MODULE_0__,
+        styles: [_splash_component_scss_ngResource__WEBPACK_IMPORTED_MODULE_1__]
+    })
+], SplashComponent);
+
+
+
+/***/ }),
+
 /***/ 6155:
 /*!**********************************************!*\
   !*** ./src/app/summary/summary.component.ts ***!
@@ -2201,6 +2255,17 @@ module.exports = ".container {\n  display: flex;\n  flex-direction: column;\n  h
 
 /***/ }),
 
+/***/ 768:
+/*!*********************************************************!*\
+  !*** ./src/app/splash/splash.component.scss?ngResource ***!
+  \*********************************************************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = ".container {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  height: 100%;\n  justify-content: center;\n  text-align: center;\n}\n\n.title h1 {\n  font-family: \"Ubuntu\", sans-serif;\n  font-size: 48px;\n  text-align: center;\n  font-weight: 700;\n  color: black;\n}\n\nion-content {\n  --ion-background-color:white;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNwbGFzaC5jb21wb25lbnQuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUVFLGFBQUE7RUFDQSxzQkFBQTtFQUVBLG1CQUFBO0VBQ0EsWUFBQTtFQUNBLHVCQUFBO0VBQ0Esa0JBQUE7QUFERjs7QUFJQTtFQUNFLGlDQUFBO0VBQ0EsZUFBQTtFQUNBLGtCQUFBO0VBQ0EsZ0JBQUE7RUFDQSxZQUFBO0FBREY7O0FBSUE7RUFDRSw0QkFBQTtBQURGIiwiZmlsZSI6InNwbGFzaC5jb21wb25lbnQuc2NzcyIsInNvdXJjZXNDb250ZW50IjpbIi5jb250YWluZXJcbntcbiAgZGlzcGxheTogZmxleDtcbiAgZmxleC1kaXJlY3Rpb246IGNvbHVtbjtcbiAgLy8gbWFyZ2luLXRvcDogODBweDtcbiAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAgaGVpZ2h0OiAxMDAlO1xuICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcbiAgdGV4dC1hbGlnbjogY2VudGVyO1xufVxuXG4udGl0bGUgaDF7XG4gIGZvbnQtZmFtaWx5OiBcIlVidW50dVwiLCBzYW5zLXNlcmlmO1xuICBmb250LXNpemU6IDQ4cHg7XG4gIHRleHQtYWxpZ246IGNlbnRlcjtcbiAgZm9udC13ZWlnaHQ6IDcwMDtcbiAgY29sb3I6IGJsYWNrO1xufVxuXG5pb24tY29udGVudHtcbiAgLS1pb24tYmFja2dyb3VuZC1jb2xvcjp3aGl0ZTtcbn1cbiJdfQ== */";
+
+/***/ }),
+
 /***/ 4931:
 /*!***********************************************************!*\
   !*** ./src/app/summary/summary.component.scss?ngResource ***!
@@ -2208,7 +2273,7 @@ module.exports = ".container {\n  display: flex;\n  flex-direction: column;\n  h
 /***/ ((module) => {
 
 "use strict";
-module.exports = ".container {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  overflow-y: scroll;\n  margin: auto 12px;\n  height: 100%;\n  justify-content: center;\n  text-align: center;\n}\n\n.icon img {\n  display: flex;\n  align-items: flex-start;\n  width: 50px;\n  height: 50px;\n  padding: 12px;\n  background: white;\n  border: 3px solid var(--ion-background-color);\n}\n\n.title {\n  font-family: \"Ubuntu\", sans-serif;\n  font-size: 18px;\n  text-align: center;\n  font-weight: 700;\n}\n\n.button {\n  display: flex;\n  flex-direction: column;\n  margin: auto 4px;\n  gap: 4px;\n}\n\n#but1 {\n  font-family: \"Ubuntu\", sans-serif;\n  font-size: 16px;\n  text-align: center;\n  font-weight: 400;\n  color: #fff;\n  background-color: #7844a8;\n  padding: 16px;\n  border-radius: 3%;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInN1bW1hcnkuY29tcG9uZW50LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQ0E7RUFFRSxhQUFBO0VBQ0Esc0JBQUE7RUFDQSxtQkFBQTtFQUNBLGtCQUFBO0VBQ0EsaUJBQUE7RUFDQSxZQUFBO0VBQ0EsdUJBQUE7RUFDQSxrQkFBQTtBQURGOztBQUlBO0VBQ0UsYUFBQTtFQUNBLHVCQUFBO0VBQ0EsV0FBQTtFQUNBLFlBQUE7RUFDQSxhQUFBO0VBQ0EsaUJBQUE7RUFDQSw2Q0FBQTtBQURGOztBQUlBO0VBQ0UsaUNBQUE7RUFDQSxlQUFBO0VBQ0Esa0JBQUE7RUFDQSxnQkFBQTtBQURGOztBQUtBO0VBRUUsYUFBQTtFQUNBLHNCQUFBO0VBQ0EsZ0JBQUE7RUFDQSxRQUFBO0FBSEY7O0FBTUE7RUFDRSxpQ0FBQTtFQUNBLGVBQUE7RUFDQSxrQkFBQTtFQUNBLGdCQUFBO0VBQ0EsV0FBQTtFQUNBLHlCQUFBO0VBQ0EsYUFBQTtFQUNBLGlCQUFBO0FBSEYiLCJmaWxlIjoic3VtbWFyeS5jb21wb25lbnQuc2NzcyIsInNvdXJjZXNDb250ZW50IjpbIlxuLmNvbnRhaW5lclxue1xuICBkaXNwbGF5OiBmbGV4O1xuICBmbGV4LWRpcmVjdGlvbjogY29sdW1uO1xuICBhbGlnbi1pdGVtczogY2VudGVyO1xuICBvdmVyZmxvdy15OiBzY3JvbGw7XG4gIG1hcmdpbjogYXV0byAxMnB4O1xuICBoZWlnaHQ6IDEwMCU7XG4gIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICB0ZXh0LWFsaWduOiBjZW50ZXI7XG59XG5cbi5pY29uIGltZ3tcbiAgZGlzcGxheTogZmxleDtcbiAgYWxpZ24taXRlbXM6IGZsZXgtc3RhcnQ7XG4gIHdpZHRoOiA1MHB4O1xuICBoZWlnaHQ6IDUwcHg7XG4gIHBhZGRpbmc6IDEycHg7XG4gIGJhY2tncm91bmQ6IHdoaXRlO1xuICBib3JkZXI6IDNweCBzb2xpZCB2YXIoLS1pb24tYmFja2dyb3VuZC1jb2xvcik7XG59XG5cbi50aXRsZXtcbiAgZm9udC1mYW1pbHk6IFwiVWJ1bnR1XCIsIHNhbnMtc2VyaWY7XG4gIGZvbnQtc2l6ZTogMThweDtcbiAgdGV4dC1hbGlnbjogY2VudGVyO1xuICBmb250LXdlaWdodDogNzAwO1xuXG59XG5cbi5idXR0b25cbntcbiAgZGlzcGxheTogZmxleDtcbiAgZmxleC1kaXJlY3Rpb246IGNvbHVtbjtcbiAgbWFyZ2luOiBhdXRvIDRweDtcbiAgZ2FwOiA0cHg7XG59XG5cbiNidXQxe1xuICBmb250LWZhbWlseTogXCJVYnVudHVcIiwgc2Fucy1zZXJpZjtcbiAgZm9udC1zaXplOiAxNnB4O1xuICB0ZXh0LWFsaWduOiBjZW50ZXI7XG4gIGZvbnQtd2VpZ2h0OiA0MDA7XG4gIGNvbG9yOiAjZmZmO1xuICBiYWNrZ3JvdW5kLWNvbG9yOiByZ2IoMTIwLCA2OCwgMTY4KTtcbiAgcGFkZGluZzogMTZweDtcbiAgYm9yZGVyLXJhZGl1czogMyU7XG59XG4iXX0= */";
+module.exports = ".container {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  overflow-y: scroll;\n  margin: auto 12px;\n  height: 100%;\n  justify-content: center;\n  text-align: center;\n}\n\n.icon img {\n  display: flex;\n  align-items: flex-start;\n  width: 50px;\n  height: 50px;\n  padding: 12px;\n  background: white;\n  border: 3px solid var(--ion-background-color);\n}\n\n.title {\n  font-family: \"Ubuntu\", sans-serif;\n  font-size: 32px;\n  text-align: center;\n  font-weight: 700;\n}\n\n.button {\n  display: flex;\n  flex-direction: column;\n  margin: auto 4px;\n  gap: 4px;\n}\n\n#but1 {\n  font-family: \"Ubuntu\", sans-serif;\n  font-size: 16px;\n  text-align: center;\n  font-weight: 400;\n  color: #fff;\n  background-color: #7844a8;\n  padding: 16px;\n  border-radius: 3%;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInN1bW1hcnkuY29tcG9uZW50LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQ0E7RUFFRSxhQUFBO0VBQ0Esc0JBQUE7RUFDQSxtQkFBQTtFQUNBLGtCQUFBO0VBQ0EsaUJBQUE7RUFDQSxZQUFBO0VBQ0EsdUJBQUE7RUFDQSxrQkFBQTtBQURGOztBQUlBO0VBQ0UsYUFBQTtFQUNBLHVCQUFBO0VBQ0EsV0FBQTtFQUNBLFlBQUE7RUFDQSxhQUFBO0VBQ0EsaUJBQUE7RUFDQSw2Q0FBQTtBQURGOztBQUlBO0VBQ0UsaUNBQUE7RUFDQSxlQUFBO0VBQ0Esa0JBQUE7RUFDQSxnQkFBQTtBQURGOztBQUtBO0VBRUUsYUFBQTtFQUNBLHNCQUFBO0VBQ0EsZ0JBQUE7RUFDQSxRQUFBO0FBSEY7O0FBTUE7RUFDRSxpQ0FBQTtFQUNBLGVBQUE7RUFDQSxrQkFBQTtFQUNBLGdCQUFBO0VBQ0EsV0FBQTtFQUNBLHlCQUFBO0VBQ0EsYUFBQTtFQUNBLGlCQUFBO0FBSEYiLCJmaWxlIjoic3VtbWFyeS5jb21wb25lbnQuc2NzcyIsInNvdXJjZXNDb250ZW50IjpbIlxuLmNvbnRhaW5lclxue1xuICBkaXNwbGF5OiBmbGV4O1xuICBmbGV4LWRpcmVjdGlvbjogY29sdW1uO1xuICBhbGlnbi1pdGVtczogY2VudGVyO1xuICBvdmVyZmxvdy15OiBzY3JvbGw7XG4gIG1hcmdpbjogYXV0byAxMnB4O1xuICBoZWlnaHQ6IDEwMCU7XG4gIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICB0ZXh0LWFsaWduOiBjZW50ZXI7XG59XG5cbi5pY29uIGltZ3tcbiAgZGlzcGxheTogZmxleDtcbiAgYWxpZ24taXRlbXM6IGZsZXgtc3RhcnQ7XG4gIHdpZHRoOiA1MHB4O1xuICBoZWlnaHQ6IDUwcHg7XG4gIHBhZGRpbmc6IDEycHg7XG4gIGJhY2tncm91bmQ6IHdoaXRlO1xuICBib3JkZXI6IDNweCBzb2xpZCB2YXIoLS1pb24tYmFja2dyb3VuZC1jb2xvcik7XG59XG5cbi50aXRsZXtcbiAgZm9udC1mYW1pbHk6IFwiVWJ1bnR1XCIsIHNhbnMtc2VyaWY7XG4gIGZvbnQtc2l6ZTogMzJweDtcbiAgdGV4dC1hbGlnbjogY2VudGVyO1xuICBmb250LXdlaWdodDogNzAwO1xuXG59XG5cbi5idXR0b25cbntcbiAgZGlzcGxheTogZmxleDtcbiAgZmxleC1kaXJlY3Rpb246IGNvbHVtbjtcbiAgbWFyZ2luOiBhdXRvIDRweDtcbiAgZ2FwOiA0cHg7XG59XG5cbiNidXQxe1xuICBmb250LWZhbWlseTogXCJVYnVudHVcIiwgc2Fucy1zZXJpZjtcbiAgZm9udC1zaXplOiAxNnB4O1xuICB0ZXh0LWFsaWduOiBjZW50ZXI7XG4gIGZvbnQtd2VpZ2h0OiA0MDA7XG4gIGNvbG9yOiAjZmZmO1xuICBiYWNrZ3JvdW5kLWNvbG9yOiByZ2IoMTIwLCA2OCwgMTY4KTtcbiAgcGFkZGluZzogMTZweDtcbiAgYm9yZGVyLXJhZGl1czogMyU7XG59XG4iXX0= */";
 
 /***/ }),
 
@@ -2219,7 +2284,7 @@ module.exports = ".container {\n  display: flex;\n  flex-direction: column;\n  a
 /***/ ((module) => {
 
 "use strict";
-module.exports = "<div class=\"icon\">\n  <img routerLink=\"\" src=\"../../assets/icon/arrow.png\">\n</div>\n\n<div class=\"container\">\n  <div class=\"subtitle\">\n    <h1>Obrigado por chegar até aqui!</h1>\n  </div>\n\n  <div class=\"p\">\n    <p>\n      Parabéns, você chegou ao final do aplicativo! Esperamos que vocês, pai,\n      mãe e família, tenham aprendido mais sobre o importante papel da família\n      na prevenção e alívio da dor do bebê prematuro.\n    </p>\n\n    <p>\n      Este material foi desenvolvido por Enfermeiras especialistas em dor e\n      Cuidado Intensivo Neonatal, estudante de Enfermagem e profissionais das\n      áreas de Tecnologia e Design, pensando em toda a família do bebê\n      prematuro.\n    </p>\n\n    <!-- <p>\n      Caso tenha permanecido com algum dúvida ou alguma sugestão que irá\n      contribuir com outros pais, mães e familiares o espaço abaixo está\n      disponível!\n    </p> -->\n  </div>\n\n  <!-- <div class=\"button\">\n    <div id=\"but1\">\n      <p>NOME:</p>\n      <p>EMAIL:</p>\n      <p>SUGESTÃO:</p>\n    </div>\n  </div> -->\n\n  <div class=\"button\">\n    <a id=\"but2\" routerLink=\"\">HOME</a>\n</div>\n";
+module.exports = "<div class=\"icon\">\n  <img routerLink=\"/quiz7\" src=\"../../assets/icon/arrow.png\" />\n</div>\n\n<div class=\"container\">\n  <div class=\"subtitle\">\n    <h1>Obrigado por chegar até aqui!</h1>\n  </div>\n\n  <div class=\"p\">\n    <p>\n      Parabéns, você chegou ao final do aplicativo! Esperamos que vocês, pai,\n      mãe e família, tenham aprendido mais sobre o importante papel da família\n      na prevenção e alívio da dor do bebê prematuro.\n    </p>\n\n    <p>\n      Este material foi desenvolvido por Enfermeiras especialistas em dor e\n      Cuidado Intensivo Neonatal, estudante de Enfermagem e profissionais das\n      áreas de Tecnologia e Design, pensando em toda a família do bebê\n      prematuro.\n    </p>\n\n    <!-- <p>\n      Caso tenha permanecido com algum dúvida ou alguma sugestão que irá\n      contribuir com outros pais, mães e familiares o espaço abaixo está\n      disponível!\n    </p> -->\n  </div>\n\n  <!-- <div class=\"button\">\n    <div id=\"but1\">\n      <p>NOME:</p>\n      <p>EMAIL:</p>\n      <p>SUGESTÃO:</p>\n    </div>\n  </div> -->\n\n  <div class=\"button\">\n    <a id=\"but2\" routerLink=\"/home\">HOME</a>\n  </div>\n</div>\n";
 
 /***/ }),
 
@@ -2241,7 +2306,7 @@ module.exports = "<ion-app>\n  <ion-router-outlet></ion-router-outlet>\n</ion-ap
 /***/ ((module) => {
 
 "use strict";
-module.exports = "<div class=\"icon\">\n  <img routerLink=\"\" src=\"../../assets/icon/arrow.png\">\n</div>\n\n<div class=\"container\">\n  <div class=\"subtitle\">\n    <h3>TÓPICO 4 - VOCÊS PODEM AJUDAR O SEU FILHO OU FILHA!</h3>\n    <h1>Sim! Vocês podem ajudar o seu bebê!</h1>\n  </div>\n\n  <!-- <div class=\"p\">\n    <p class=\"p-sub\">\n      Aqui você encontrará informações sobre a dor e como vocês (pais ou\n      familiares) podem ajudar o seu filho ou sua filha durante a internação.\n    </p>\n</div> -->\n\n  <div class=\"p\">\n    <p>\n      A participação de vocês pais reduz a\n      exposição do recém-nascido ao desconforto e\n      ao estresse. Vocês podem ajudar seu filho\n      sua filha através do toque, posição canguru,\n      comunicação corporal e não verbal afetiva,\n      falar com uma voz carinhosa durante os\n      momentos de aproximação e interação.\n    </p>\n\n    <p>\n      <strong>A equipe de saúde estará sempre com vocês,\n        apoiando e ajudando!\n        </strong>\n    </p>\n\n    <p>\n      Vocês PODEM, caso desejem e se sintam\n      seguros, participar estando junto ao seu filho\n      ou sua filha durante a realização de\n      procedimentos dolorosos.\n    </p>\n  </div>\n\n  <div class=\"photo\">\n    <img src=\"../../assets/imgs/27.png\" alt=\"\" />\n    <!-- <img src=\"../../assets/imgs/12.png\" alt=\"\" /> -->\n  </div>\n\n\n  <div class=\"button\">\n    <a id=\"but1\" routerLink=\"/help2\">PRÓXIMA PÁGINA</a>\n  </div>\n</div>\n";
+module.exports = "<div class=\"icon\">\n  <img routerLink=\"/summary\" src=\"../../assets/icon/arrow.png\" />\n</div>\n\n<div class=\"container\">\n  <div class=\"subtitle\">\n    <h3>TÓPICO 4 - VOCÊS PODEM AJUDAR O SEU FILHO OU FILHA!</h3>\n    <h1>Sim! Vocês podem ajudar o seu bebê!</h1>\n  </div>\n\n  <!-- <div class=\"p\">\n    <p class=\"p-sub\">\n      Aqui você encontrará informações sobre a dor e como vocês (pais ou\n      familiares) podem ajudar o seu filho ou sua filha durante a internação.\n    </p>\n</div> -->\n\n  <div class=\"p\">\n    <p>\n      A participação de vocês pais reduz a exposição do recém-nascido ao\n      desconforto e ao estresse. Vocês podem ajudar seu filho sua filha através\n      do toque, posição canguru, comunicação corporal e não verbal afetiva,\n      falar com uma voz carinhosa durante os momentos de aproximação e\n      interação.\n    </p>\n\n    <p>\n      <strong\n        >A equipe de saúde estará sempre com vocês, apoiando e ajudando!\n      </strong>\n    </p>\n\n    <p>\n      Vocês PODEM, caso desejem e se sintam seguros, participar estando junto ao\n      seu filho ou sua filha durante a realização de procedimentos dolorosos.\n    </p>\n  </div>\n\n  <div class=\"photo\">\n    <img src=\"../../assets/imgs/27.png\" alt=\"\" />\n    <!-- <img src=\"../../assets/imgs/12.png\" alt=\"\" /> -->\n  </div>\n\n  <div class=\"button\">\n    <a id=\"but1\" routerLink=\"/help2\">PRÓXIMA PÁGINA</a>\n  </div>\n</div>\n";
 
 /***/ }),
 
@@ -2274,7 +2339,7 @@ module.exports = "<div class=\"icon\">\n  <img routerLink=\"/help2\" src=\"../..
 /***/ ((module) => {
 
 "use strict";
-module.exports = "<div class=\"icon\">\n  <img routerLink=\"/summary\" src=\"../../assets/icon/arrow.png\">\n</div>\n\n<div class=\"container\">\n  <div class=\"subtitle\">\n    <h3>\n      TÓPICO 5: COMO AJUDAR O MEU FILHO OU FILHA DURANTE UM PROCEDIMENTO\n      DOLOROSO E/OU ESTRESSANTE?\n    </h3>\n    <h1>Antes do procedimento:</h1>\n  </div>\n\n  <div class=\"p\">\n    <ul>\n      <li>\n        Procure olhar nos olhos de seu filho ou sua filha, quando estiverem\n        abertos.\n      </li>\n      <li>\n        Converse com ele ou ela quanto ao procedimento, e que vocês estarão\n        juntos! A voz materna/paterna é uma ponte importante para a ligação\n        emocional e afetiva entre os pais e o prematuro.\n      </li>\n      <li>Cantar baixinho também pode acalmar seu bebê.</li>\n      <li>\n        Ao tocar seu filho, sua filha evitar mudanças súbitas de postura ou\n        realizá-las com ele ou ela bem aconchegado em flexão e com as mãos\n        próximas à boca.\n      </li>\n      <li>\n        Vocês devem estar em uma posição bem confortável, de preferência\n        sentados para dar o colo materno ou paterno.\n      </li>\n      <li>\n        Sempre transmitir segurança e conforto através da voz e do toque das\n        mãos.\n      </li>\n    </ul>\n  </div>\n\n  <div class=\"button\">\n    <a id=\"but1\" routerLink=\"/how2\">PRÓXIMA PÁGINA</a>\n  </div>\n</div>\n";
+module.exports = "<div class=\"icon\">\n  <img routerLink=\"/summary\" src=\"../../assets/icon/arrow.png\" />\n</div>\n\n<div class=\"container\">\n  <div class=\"subtitle\">\n    <h3>\n      TÓPICO 5: COMO AJUDAR O MEU FILHO OU FILHA DURANTE UM PROCEDIMENTO\n      DOLOROSO E/OU ESTRESSANTE?\n    </h3>\n    <h1>Antes do procedimento:</h1>\n  </div>\n\n  <div class=\"p\">\n    <ul>\n      <li>\n        Procure olhar nos olhos de seu filho ou sua filha, quando estiverem\n        abertos.\n      </li>\n      <li>\n        Converse com ele ou ela quanto ao procedimento, e que vocês estarão\n        juntos! A voz materna/paterna é uma ponte importante para a ligação\n        emocional e afetiva entre os pais e o prematuro.\n      </li>\n      <li>Cantar baixinho também pode acalmar seu bebê.</li>\n      <li>\n        Ao tocar seu filho, sua filha evitar mudanças súbitas de postura ou\n        realizá-las com ele ou ela bem aconchegado em flexão e com as mãos\n        próximas à boca.\n      </li>\n      <li>\n        Vocês devem estar em uma posição bem confortável, de preferência\n        sentados para dar o colo materno ou paterno.\n      </li>\n      <li>\n        Sempre transmitir segurança e conforto através da voz e do toque das\n        mãos.\n      </li>\n    </ul>\n  </div>\n\n  <div class=\"button\">\n    <a id=\"but1\" routerLink=\"/how2\">PRÓXIMA PÁGINA</a>\n  </div>\n</div>\n";
 
 /***/ }),
 
@@ -2351,7 +2416,7 @@ module.exports = "<div class=\"icon\">\n  <img routerLink=\"/how6\" src=\"../../
 /***/ ((module) => {
 
 "use strict";
-module.exports = "<div class=\"icon\">\n  <img routerLink=\"/how5\" src=\"../../assets/icon/arrow.png\">\n</div>\n\n<div class=\"container\">\n  <!-- <div class=\"subtitle\">\n    <h3>\n      TÓPICO 5: COMO AJUDAR O MEU FILHO OU FILHA DURANTE UM PROCEDIMENTO\n      DOLOROSO E/OU ESTRESSANTE?\n    </h3>\n    <h1>Durante o procedimento:</h1>\n  </div> -->\n\n  <div class=\"p\">\n    <p>\n      <strong>2. Amamentação: </strong>\n    </p>\n\n    <p>\n      A amamentação é uma medida muito importante que além de promover todos os\n      nutrientes necessários para o crescimento e desenvolvimento do seu filho\n      ou filha está associada a muitos outros benefícios, sendo um deles o\n      alívio da dor quando realizada antes, durante e após procedimentos\n      dolorosos.\n    </p>\n\n    <p>\n      Em contato pele a pele ou posição canguru o seu filho, sua filha está\n      aquecido, ouvindo os batimentos cardíacos (sons do coração) e sentindo o\n      cheiro materno/paterno o que promove uma sensação de conforto e segurança,\n      sendo capaz de acalmá-lo durante a realização dos procedimentos dolorosos.\n    </p>\n\n    <p>\n      É importante consultar os médicos e enfermeiros que estão cuidando de seu\n      filho ou filha para saber se ele ou ela já é capaz de receber o leite\n      materno através do seio pois para isso ele ou ela precisa ser capaz de\n      sugar o seio, respirar e deglutir o leite ao mesmo tempo.\n    </p>\n  </div>\n\n  <h4>\n    A EQUIPE DE SAÚDE VAI APOIAR A AMAMENTAÇÃO SEMPRE!\n  </h4>\n\n  <!-- <div class=\"photo\">\n    <img src=\"../../assets/imgs/17.png\" alt=\"\" />\n    <img src=\"../../assets/imgs/29.png\" alt=\"\" />\n  </div> -->\n\n  <div class=\"button\">\n    <a id=\"but1\" routerLink=\"/how9\">PRÓXIMA PÁGINA</a>\n  </div>\n</div>\n";
+module.exports = "<div class=\"icon\">\n  <img routerLink=\"/how7\" src=\"../../assets/icon/arrow.png\" />\n</div>\n\n<div class=\"container\">\n  <!-- <div class=\"subtitle\">\n    <h3>\n      TÓPICO 5: COMO AJUDAR O MEU FILHO OU FILHA DURANTE UM PROCEDIMENTO\n      DOLOROSO E/OU ESTRESSANTE?\n    </h3>\n    <h1>Durante o procedimento:</h1>\n  </div> -->\n\n  <div class=\"p\">\n    <p>\n      <strong>2. Amamentação: </strong>\n    </p>\n\n    <p>\n      A amamentação é uma medida muito importante que além de promover todos os\n      nutrientes necessários para o crescimento e desenvolvimento do seu filho\n      ou filha está associada a muitos outros benefícios, sendo um deles o\n      alívio da dor quando realizada antes, durante e após procedimentos\n      dolorosos.\n    </p>\n\n    <p>\n      Em contato pele a pele ou posição canguru o seu filho, sua filha está\n      aquecido, ouvindo os batimentos cardíacos (sons do coração) e sentindo o\n      cheiro materno/paterno o que promove uma sensação de conforto e segurança,\n      sendo capaz de acalmá-lo durante a realização dos procedimentos dolorosos.\n    </p>\n\n    <p>\n      É importante consultar os médicos e enfermeiros que estão cuidando de seu\n      filho ou filha para saber se ele ou ela já é capaz de receber o leite\n      materno através do seio pois para isso ele ou ela precisa ser capaz de\n      sugar o seio, respirar e deglutir o leite ao mesmo tempo.\n    </p>\n  </div>\n\n  <h4>A EQUIPE DE SAÚDE VAI APOIAR A AMAMENTAÇÃO SEMPRE!</h4>\n\n  <!-- <div class=\"photo\">\n    <img src=\"../../assets/imgs/17.png\" alt=\"\" />\n    <img src=\"../../assets/imgs/29.png\" alt=\"\" />\n  </div> -->\n\n  <div class=\"button\">\n    <a id=\"but1\" routerLink=\"/how9\">PRÓXIMA PÁGINA</a>\n  </div>\n</div>\n";
 
 /***/ }),
 
@@ -2373,7 +2438,7 @@ module.exports = "<div class=\"icon\">\n  <img routerLink=\"/how8\" src=\"../../
 /***/ ((module) => {
 
 "use strict";
-module.exports = "<div class=\"icon\">\n  <img routerLink=\"\" src=\"../../assets/icon/arrow.png\">\n</div>\n\n<div class=\"container\">\n  <div class=\"subtitle\">\n    <h3>TÓPICO 2: NASCEU PREMATURO. . . E AGORA?</h3>\n    <h1>Nasceu prematuro e agora? Como será?</h1>\n  </div>\n\n  <!-- <div class=\"p\">\n    <p class=\"p-sub\">\n      Aqui você encontrará informações sobre a dor e como vocês (pais ou\n      familiares) podem ajudar o seu filho ou sua filha durante a internação.\n    </p>\n</div> -->\n  <!--\n  <div class=\"photo\">\n    <img src=\"../../assets/imgs/2.jpg\" alt=\"\" />\n  </div> -->\n\n  <div class=\"p\">\n    <p>\n      Quando um bebê nasce prematuro é muito comum que os pais sintam medo ou\n      angústia, ansiedade e até mesmo culpa.\n      <strong> Mas vocês não estarão sozinhos! </strong> Toda a equipe de saúde\n      da Unidade de Terapia Intensiva Neonatal (UTIN) estará com vocês!\n    </p>\n\n    <p>\n      Fiquem tranquilos, pois a equipe de saúde <strong>SEMPRE</strong> irá\n      conversar com vocês antes do encontro com seu filho ou sua filha na UTIN,\n      informando sobre as condições clínicas e comportamentais de seu bebê.\n    </p>\n\n  <p>\n    É importante dizer que, dependendo da classificação do prematuro, seu filho\n    ou sua filha poderá passar um longo período internado na UTIN, pois seus\n    órgãos como o coração, pulmão e cérebro ainda não estão maduros o suficiente\n    e poderão necessitar de algum tipo de cuidado especial.\n  </p>\n  </div>\n\n  <div class=\"button\">\n    <a id=\"but1\" routerLink=\"/ifprematuro2\">PRÓXIMA PÁGINA</a>\n  </div>\n</div>\n";
+module.exports = "<div class=\"icon\">\n  <img routerLink=\"/summary\" src=\"../../assets/icon/arrow.png\" />\n</div>\n\n<div class=\"container\">\n  <div class=\"subtitle\">\n    <h3>TÓPICO 2: NASCEU PREMATURO. . . E AGORA?</h3>\n    <h1>Nasceu prematuro e agora? Como será?</h1>\n  </div>\n\n  <!-- <div class=\"p\">\n    <p class=\"p-sub\">\n      Aqui você encontrará informações sobre a dor e como vocês (pais ou\n      familiares) podem ajudar o seu filho ou sua filha durante a internação.\n    </p>\n</div> -->\n  <!--\n  <div class=\"photo\">\n    <img src=\"../../assets/imgs/2.jpg\" alt=\"\" />\n  </div> -->\n\n  <div class=\"p\">\n    <p>\n      Quando um bebê nasce prematuro é muito comum que os pais sintam medo ou\n      angústia, ansiedade e até mesmo culpa.\n      <strong> Mas vocês não estarão sozinhos! </strong> Toda a equipe de saúde\n      da Unidade de Terapia Intensiva Neonatal (UTIN) estará com vocês!\n    </p>\n\n    <p>\n      Fiquem tranquilos, pois a equipe de saúde <strong>SEMPRE</strong> irá\n      conversar com vocês antes do encontro com seu filho ou sua filha na UTIN,\n      informando sobre as condições clínicas e comportamentais de seu bebê.\n    </p>\n\n    <p>\n      É importante dizer que, dependendo da classificação do prematuro, seu\n      filho ou sua filha poderá passar um longo período internado na UTIN, pois\n      seus órgãos como o coração, pulmão e cérebro ainda não estão maduros o\n      suficiente e poderão necessitar de algum tipo de cuidado especial.\n    </p>\n  </div>\n\n  <div class=\"button\">\n    <a id=\"but1\" routerLink=\"/ifprematuro2\">PRÓXIMA PÁGINA</a>\n  </div>\n</div>\n";
 
 /***/ }),
 
@@ -2395,7 +2460,7 @@ module.exports = "<div class=\"icon\">\n  <img routerLink=\"/ifprematuro\" src=\
 /***/ ((module) => {
 
 "use strict";
-module.exports = "<div class=\"icon\">\n  <img routerLink=\"\" src=\"../../assets/icon/arrow.png\">\n</div>\n\n<div class=\"container\">\n  <div class=\"subtitle\">\n    <h3>TÓPICO 3 - O MEU FILHO/FILHA PODE SENTIR DOR?</h3>\n    <h1>O que é a dor?</h1>\n  </div>\n\n  <!-- <div class=\"p\">\n    <p class=\"p-sub\">\n      Aqui você encontrará informações sobre a dor e como vocês (pais ou\n      familiares) podem ajudar o seu filho ou sua filha durante a internação.\n    </p>\n</div> -->\n\n  <div class=\"p\">\n    <p>\n      A dor pode ser um sinal de que algo não vai bem no nosso corpo! E cada\n      pessoa sabe o quanto dói a sua dor.\n    </p>\n\n    <p>\n      A dor é uma sensação de alerta produzida\n      pelo nosso Sistema Nervoso geralmente\n      devido a uma lesão na pele, como uma ferida.\n      Ela é um aviso que algo não está certo no\n      nosso organismo e por isso é muito\n      importante para a sobrevivência dos seres\n      humanos.\n    </p>\n\n    <p>\n    <strong>Mas pode o meu bebê prematuro sentir dor?</strong>\n    </p>\n\n    <p>\n      <u>SIM! Quando o prematuro é furado por uma\n        agulha na mão ou no calcanhar, ele sente dor.\n        </u>\n    </p>\n  </div>\n\n  <div class=\"photo\">\n    <img src=\"../../assets/imgs/7.png\" alt=\"\" />\n  </div>\n\n  <div class=\"button\">\n    <a id=\"but1\" routerLink=\"/pain2\">PRÓXIMA PÁGINA</a>\n  </div>\n</div>\n";
+module.exports = "<div class=\"icon\">\n  <img routerLink=\"/summary\" src=\"../../assets/icon/arrow.png\" />\n</div>\n\n<div class=\"container\">\n  <div class=\"subtitle\">\n    <h3>TÓPICO 3 - O MEU FILHO/FILHA PODE SENTIR DOR?</h3>\n    <h1>O que é a dor?</h1>\n  </div>\n\n  <!-- <div class=\"p\">\n    <p class=\"p-sub\">\n      Aqui você encontrará informações sobre a dor e como vocês (pais ou\n      familiares) podem ajudar o seu filho ou sua filha durante a internação.\n    </p>\n</div> -->\n\n  <div class=\"p\">\n    <p>\n      A dor pode ser um sinal de que algo não vai bem no nosso corpo! E cada\n      pessoa sabe o quanto dói a sua dor.\n    </p>\n\n    <p>\n      A dor é uma sensação de alerta produzida pelo nosso Sistema Nervoso\n      geralmente devido a uma lesão na pele, como uma ferida. Ela é um aviso que\n      algo não está certo no nosso organismo e por isso é muito importante para\n      a sobrevivência dos seres humanos.\n    </p>\n\n    <p>\n      <strong>Mas pode o meu bebê prematuro sentir dor?</strong>\n    </p>\n\n    <p>\n      <u\n        >SIM! Quando o prematuro é furado por uma agulha na mão ou no calcanhar,\n        ele sente dor.\n      </u>\n    </p>\n  </div>\n\n  <div class=\"photo\">\n    <img src=\"../../assets/imgs/7.png\" alt=\"\" />\n  </div>\n\n  <div class=\"button\">\n    <a id=\"but1\" routerLink=\"/pain2\">PRÓXIMA PÁGINA</a>\n  </div>\n</div>\n";
 
 /***/ }),
 
@@ -2450,7 +2515,7 @@ module.exports = "<div class=\"icon\">\n  <img routerLink=\"/pain4\" src=\"../..
 /***/ ((module) => {
 
 "use strict";
-module.exports = "<div class=\"icon\">\n  <img routerLink=\"\" src=\"../../assets/icon/arrow.png\">\n</div>\n\n\n<div class=\"container\">\n  <div class=\"subtitle\">\n    <h3>TÓPICO 1: A PREMATURIDADE</h3>\n    <h1>O prematuro</h1>\n  </div>\n\n  <!-- <div class=\"p\">\n    <p class=\"p-sub\">\n      Aqui você encontrará informações sobre a dor e como vocês (pais ou\n      familiares) podem ajudar o seu filho ou sua filha durante a internação.\n    </p>\n</div> -->\n\n  <div class=\"photo\">\n    <img src=\"../../assets/imgs/2.jpg\" alt=\"\" />\n  </div>\n\n  <div class=\"p\">\n    <p>\n      <strong\n        >Você sabia que seu filho ou sua filha nascida antes do tempo é chamado\n        de prematuro ou pré-termo?\n      </strong>\n    </p>\n\n    <p>\n      Então... antes de falar sobre como prevenir e aliviar a dor do\n      recém-nascido prematuro precisamos entender\n      <strong> o que é um recém nascido prematuro.</strong>\n    </p>\n\n    <p>\n      O bebê a termo nasce quando a mãe está entre a 37ª e 42ª. semanas de\n      gestação, porém alguns motivos podem levar a um nascimento antes do tempo,\n      ou seja, com menos de 37 semanas de gestação, e quando isso acontece o\n      bebê é chamado de <u>PREMATURO.</u>\n    </p>\n  </div>\n\n  <div class=\"button\">\n    <a id=\"but1\" routerLink=\"/prematuro2\">PRÓXIMA PÁGINA</a>\n  </div>\n</div>\n";
+module.exports = "<div class=\"icon\">\n  <img routerLink=\"/summary\" src=\"../../assets/icon/arrow.png\" />\n</div>\n\n<div class=\"container\">\n  <div class=\"subtitle\">\n    <h3>TÓPICO 1: A PREMATURIDADE</h3>\n    <h1>O prematuro</h1>\n  </div>\n\n  <!-- <div class=\"p\">\n    <p class=\"p-sub\">\n      Aqui você encontrará informações sobre a dor e como vocês (pais ou\n      familiares) podem ajudar o seu filho ou sua filha durante a internação.\n    </p>\n</div> -->\n\n  <div class=\"photo\">\n    <img src=\"../../assets/imgs/2.jpg\" alt=\"\" />\n  </div>\n\n  <div class=\"p\">\n    <p>\n      <strong\n        >Você sabia que seu filho ou sua filha nascida antes do tempo é chamado\n        de prematuro ou pré-termo?\n      </strong>\n    </p>\n\n    <p>\n      Então... antes de falar sobre como prevenir e aliviar a dor do\n      recém-nascido prematuro precisamos entender\n      <strong> o que é um recém nascido prematuro.</strong>\n    </p>\n\n    <p>\n      O bebê a termo nasce quando a mãe está entre a 37ª e 42ª. semanas de\n      gestação, porém alguns motivos podem levar a um nascimento antes do tempo,\n      ou seja, com menos de 37 semanas de gestação, e quando isso acontece o\n      bebê é chamado de <u>PREMATURO.</u>\n    </p>\n  </div>\n\n  <div class=\"button\">\n    <a id=\"but1\" routerLink=\"/prematuro2\">PRÓXIMA PÁGINA</a>\n  </div>\n</div>\n";
 
 /***/ }),
 
@@ -2472,7 +2537,7 @@ module.exports = "<div class=\"icon\">\n  <img routerLink=\"/prematuro\" src=\".
 /***/ ((module) => {
 
 "use strict";
-module.exports = "<div class=\"icon\">\n  <img routerLink=\"/summary\" src=\"../../assets/icon/arrow.png\">\n</div>\n\n<div class=\"container\">\n  <div class=\"subtitle\">\n    <h1>TÓPICO 5: QUIZ</h1>\n\n    <div class=\"p\">\n      <p>Agora que você já sabe um\n        pouco mais sobre como ajudar\n        o seu bebê, que tal reforçar\n        o que aprendeu com um jogo?</p>\n\n        <p>Neste jogo você verá imagens\n          reais de bebês prematuros em\n          situações que podem acontecer\n          com seu bebê internado na\n          Unidade Neonatal.</p>\n\n          <p>O objetivo deste jogo é que\n            essas situações reais lhe\n            ajudem a identificar e cuidar\n            de seu bebê prematuro quando\n            o mesmo sente dor. Vamos lá?</p>\n    </div>\n\n    <div class=\"button\">\n      <button id=\"but1\" routerLink=\"/quiz2\">JOGAR</button>\n    </div>\n  </div>\n</div>\n";
+module.exports = "<div class=\"icon\">\n  <img routerLink=\"/summary\" src=\"../../assets/icon/arrow.png\" />\n</div>\n\n<div class=\"container\">\n  <div class=\"subtitle\">\n    <h1>TÓPICO 6: QUIZ</h1>\n\n    <div class=\"p\">\n      <p>\n        Agora que você já sabe um pouco mais sobre como ajudar o seu bebê, que\n        tal reforçar o que aprendeu com um jogo?\n      </p>\n\n      <p>\n        Neste jogo você verá imagens reais de bebês prematuros em situações que\n        podem acontecer com seu bebê internado na Unidade Neonatal.\n      </p>\n\n      <p>\n        O objetivo deste jogo é que essas situações reais lhe ajudem a\n        identificar e cuidar de seu bebê prematuro quando o mesmo sente dor.\n        Vamos lá?\n      </p>\n    </div>\n\n    <div class=\"button\">\n      <button id=\"but1\" routerLink=\"/quiz2\">JOGAR</button>\n    </div>\n  </div>\n</div>\n";
 
 /***/ }),
 
@@ -2549,7 +2614,7 @@ module.exports = "<div class=\"icon\">\n  <img routerLink=\"/quiz6\" src=\"../..
 /***/ ((module) => {
 
 "use strict";
-module.exports = "<div class=\"icon\">\n  <img routerLink=\"\" src=\"../../assets/icon/arrow.png\">\n</div>\n\n<div class=\"container\">\n\n  <div class=\"title\">\n    <h1>Olá, mamãe e papai!</h1>\n  </div>\n\n  <div class=\"p\">\n    <p class=\"p-sub\">\n      Você teve um filho ou uma filha que nasceu antes do tempo? Ele ou Ela\n      precisa ficar internado na Unidade Neonatal?\n    </p>\n\n    <p>\n      São momentos difíceis, cansativos e muito desgastantes emocionalmente para\n      vocês e toda a família, não é mesmo? Mas é fundamental para seu filho ou\n      sua filha receber todo o seu carinho, afeto e amor.\n    </p>\n\n    <p>\n      Sabemos o quanto é importante para você, Pai, Mãe e Família, ser informado\n      sobre o tratamento e os procedimentos a serem realizados pela equipe de\n      saúde para a recuperação de seu bebê.\n    </p>\n\n    <p>\n      Durante a internação seu filho ou sua filha passa por muitos procedimentos\n      <strong> importantes e necessários</strong> para a recuperação, tais como\n      furo com agulhas para coleta de sangue ou colocação de um tubinho\n      (cateter) para receber líquidos (soro ou medicamentos) através da veia da\n      mão ou do braço, porém\n      <strong\n        >estes procedimentos são considerados dolorosos e estressantes para o\n        bebê</strong\n      >.\n    </p>\n  </div>\n\n  <div class=\"button\">\n    <a id=\"but1\" routerLink=\"/screen2\">PRÓXIMO</a>\n  </div>\n</div>\n";
+module.exports = "<div class=\"icon\">\n  <img routerLink=\"/home\" src=\"../../assets/icon/arrow.png\" />\n</div>\n\n<div class=\"container\">\n  <div class=\"title\">\n    <h1>Olá, mamãe e papai!</h1>\n  </div>\n\n  <div class=\"p\">\n    <p class=\"p-sub\">\n      Você teve um filho ou uma filha que nasceu antes do tempo? Ele ou Ela\n      precisa ficar internado na Unidade Neonatal?\n    </p>\n\n    <p>\n      São momentos difíceis, cansativos e muito desgastantes emocionalmente para\n      vocês e toda a família, não é mesmo? Mas é fundamental para seu filho ou\n      sua filha receber todo o seu carinho, afeto e amor.\n    </p>\n\n    <p>\n      Sabemos o quanto é importante para você, Pai, Mãe e Família, ser informado\n      sobre o tratamento e os procedimentos a serem realizados pela equipe de\n      saúde para a recuperação de seu bebê.\n    </p>\n\n    <p>\n      Durante a internação seu filho ou sua filha passa por muitos procedimentos\n      <strong> importantes e necessários</strong> para a recuperação, tais como\n      furo com agulhas para coleta de sangue ou colocação de um tubinho\n      (cateter) para receber líquidos (soro ou medicamentos) através da veia da\n      mão ou do braço, porém\n      <strong\n        >estes procedimentos são considerados dolorosos e estressantes para o\n        bebê</strong\n      >.\n    </p>\n  </div>\n\n  <div class=\"button\">\n    <a id=\"but1\" routerLink=\"/screen2\">PRÓXIMO</a>\n  </div>\n</div>\n";
 
 /***/ }),
 
@@ -2564,6 +2629,17 @@ module.exports = "<div class=\"icon\">\n  <img routerLink=\"/screen1\" src=\"../
 
 /***/ }),
 
+/***/ 3396:
+/*!*********************************************************!*\
+  !*** ./src/app/splash/splash.component.html?ngResource ***!
+  \*********************************************************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = "<ion-content>\n  <div class=\"container\">\n    <div class=\"title\">\n      <h1>\n        CuidaDOR <br />\n        Neonatal\n      </h1>\n    </div>\n  </div>\n</ion-content>\n";
+
+/***/ }),
+
 /***/ 2497:
 /*!***********************************************************!*\
   !*** ./src/app/summary/summary.component.html?ngResource ***!
@@ -2571,7 +2647,7 @@ module.exports = "<div class=\"icon\">\n  <img routerLink=\"/screen1\" src=\"../
 /***/ ((module) => {
 
 "use strict";
-module.exports = "<div class=\"icon\">\n  <img routerLink=\"\" src=\"../../assets/icon/home.png\">\n</div>\n\n<div class=\"container\">\n  <h1 class=\"title\">MENU</h1>\n\n  <div class=\"button\">\n    <button id=\"but1\" routerLink=\"/prematuro\">A PREMATURIDADE</button>\n\n    <button id=\"but1\" routerLink=\"/ifprematuro\">NASCEU PREMATURO... E AGORA?</button>\n\n    <button id=\"but1\" routerLink=\"/pain\">O MEU FILHO/FILHA PODE SENTIR DOR?</button>\n\n    <button id=\"but1\" routerLink=\"/help\">VOCÊS PODEM AJUDAR O SEU FILHO OU FILHA!</button>\n\n    <button id=\"but1\" routerLink=\"/how\">\n      COMO AJUDAR O MEU FILHO OU FILHA DURANTE UM PROCEDIMENTO DOLOROSO E/OU\n      ESTRESSANTE?\n    </button>\n\n    <button id=\"but1\" routerLink=\"/quiz\">\n      QUIZ\n    </button>\n  </div>\n</div>\n\n";
+module.exports = "<div class=\"icon\">\n  <img routerLink=\"/home\" src=\"../../assets/icon/home.png\" />\n</div>\n\n<div class=\"container\">\n  <h1 class=\"title\">MENU</h1>\n\n  <div class=\"button\">\n    <button id=\"but1\" routerLink=\"/prematuro\">A PREMATURIDADE</button>\n\n    <button id=\"but1\" routerLink=\"/ifprematuro\">\n      NASCEU PREMATURO... E AGORA?\n    </button>\n\n    <button id=\"but1\" routerLink=\"/pain\">\n      O MEU FILHO/FILHA PODE SENTIR DOR?\n    </button>\n\n    <button id=\"but1\" routerLink=\"/help\">\n      VOCÊS PODEM AJUDAR O SEU FILHO OU FILHA!\n    </button>\n\n    <button id=\"but1\" routerLink=\"/how\">\n      COMO AJUDAR O MEU FILHO OU FILHA DURANTE UM PROCEDIMENTO DOLOROSO E/OU\n      ESTRESSANTE?\n    </button>\n\n    <button id=\"but1\" routerLink=\"/quiz\">QUIZ</button>\n  </div>\n</div>\n";
 
 /***/ })
 
