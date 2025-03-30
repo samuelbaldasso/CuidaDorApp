@@ -52,9 +52,13 @@ O aplicativo foi projetado para ser intuitivo e fácil de usar, garantindo que o
 Contribuições são bem-vindas! Se você deseja contribuir para o projeto, siga estas etapas:
 
 Fork o repositório.
+
 Crie uma nova branch (git checkout -b feature/nome-da-feature).
+
 Faça suas alterações e commit (git commit -m 'Adiciona nova feature').
+
 Push para a branch (git push origin feature/nome-da-feature).
+
 Abra um Pull Request.
 
 ---
