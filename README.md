@@ -1,4 +1,4 @@
-# TCC 1-2 - APP CUIDA DOR
+# APP CUIDA DOR
 
 Aplicativo para conscientização dos pais de recém-nascidos sobre a importância das unidades neo-natais. Este projeto foi desenvolvido como parte do trabalho de conclusão de curso da Faculdade Professor Miguel Álvaro da Silva Santos (FeMASS) em 2022.
 
@@ -19,8 +19,8 @@ Para instalar e executar o projeto, siga os passos abaixo:
 Clone o repositório:
 
 ```bash
-git clone https://github.com/samuelbaldasso/App_CuidaDor-Ionic-Angular-Firebase.git
-cd app-cuidador
+git clone https://github.com/samuelbaldasso/CuidaDorApp.git
+cd CuidaDorApp
 ```
 
 Instale as dependências:
